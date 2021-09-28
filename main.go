@@ -10,16 +10,10 @@ import (
 	"github.com/urfave/cli/v2"
 )
 
-var (
-	appName  = "emommit"
-	appFlags = []cli.Flag{}
-)
-
 func main() {
 	app := &cli.App{
-		Name:   appName,
+		Name:   "emommit",
 		Usage:  "git commit with emoji",
-		Flags:  appFlags,
 		Action: runApp,
 	}
 
