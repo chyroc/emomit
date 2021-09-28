@@ -7,6 +7,8 @@
 [![Go.Dev reference](https://img.shields.io/badge/go.dev-reference-blue?logo=go&logoColor=white)](https://pkg.go.dev/github.com/chyroc/emommit)
 [![Go project version](https://badge.fury.io/go/github.com%2Fchyroc%2Femommit.svg)](https://badge.fury.io/go/github.com%2Fchyroc%2Femommit)
 
+![](demo.gif)
+
 ## Install
 
 ### By Brew
