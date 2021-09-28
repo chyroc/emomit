@@ -34,16 +34,12 @@ func runApp(c *cli.Context) error {
 		return err
 	}
 
-	fmt.Println(c.Args())
-
 	msg, err := internal.Input("Input Message")
 	if err != nil {
 		return err
 	}
 
 	msg = fmt.Sprintf("%s %s: %s", emoji.Text, emoji.CommitType, msg)
-
-	// fmt.Printf(msg)
 
 	// git commit [-- args] -m "<generate message>"
 	args := c.Args().Slice()

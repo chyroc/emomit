@@ -23,4 +23,24 @@ go install github.com/chyroc/emommit@latest
 
 ## Usage
 
-TODO
+### Simple to use
+
+Just run `emommit`:
+
+```shell
+emommit
+```
+
+This is equivalent to running `git commit -m "<generate message>"`.
+
+`emommit` will start an interactive program to let you choose emoji(such as 🐛) and git commit type(such as fix).
+
+### Customized git commit command
+
+If you want to customize the git commit command, you can add `--` after the `emommit` command, and then add any commands supported by git commit.
+
+Such as auto stage all modified files and commit with a message:
+
+```shell
+emommit -- -a
+```
