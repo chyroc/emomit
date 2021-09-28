@@ -6,13 +6,13 @@ import (
 	"os"
 	"os/exec"
 
-	"github.com/chyroc/emommit/internal"
+	"github.com/chyroc/emomit/internal"
 	"github.com/urfave/cli/v2"
 )
 
 func main() {
 	app := &cli.App{
-		Name:   "emommit",
+		Name:   "emomit",
 		Usage:  "git commit with emoji",
 		Action: runApp,
 	}

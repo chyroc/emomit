@@ -1,4 +1,4 @@
-module github.com/chyroc/emommit
+module github.com/chyroc/emomit
 
 go 1.17
 
