@@ -28,15 +28,22 @@ func runApp(c *cli.Context) error {
 		return err
 	}
 
-	msg, err := internal.Input("Input Message")
-	if err != nil {
-		return err
+	msg := ""
+	args := c.Args().Slice()
+	args, msg = internal.ReadFromArgs(args, "m")
+	if msg == "" {
+		args, msg = internal.ReadFromArgs(args, "message")
+	}
+	if msg == "" {
+		msg, err = internal.Input("Input Message")
+		if err != nil {
+			return err
+		}
 	}
 
 	msg = fmt.Sprintf("%s %s: %s", emoji.Text, emoji.CommitType, msg)
 
 	// git commit [-- args] -m "<generate message>"
-	args := c.Args().Slice()
 	args = append([]string{"commit"}, args...)
 	args = append(args, "-m", msg)
 
