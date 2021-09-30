@@ -46,3 +46,9 @@ Such as auto stage all modified files and commit with a message:
 ```shell
 emomit -- -a
 ```
+
+### Support inputting message information directly from the command line
+
+```shell
+emomit -- -a -m "<commit message>"
+```
