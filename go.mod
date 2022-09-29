@@ -5,7 +5,7 @@ go 1.17
 require (
 	github.com/manifoldco/promptui v0.9.0
 	github.com/stretchr/testify v1.8.0
-	github.com/urfave/cli/v2 v2.14.1
+	github.com/urfave/cli/v2 v2.17.1
 )
 
 require (
